@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel = "shortcut icon" type = "img/jpeg" href = "http://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2014-12-13/08cfed96d87737bb64771c3a0f7f3668.ico">
+  <title>IMPRESSO ESPRESSO</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel = "stylesheet" href = "css/swiper.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src = "js/typed.js"></script>
+  <script src = "js/swiper.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (1000) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+  <!-- font awesome -->
+  <script src="js/all.js"></script>
+</head>
+
+<body>
+    <!-- pre LOADER-->
+    <div class = "preloader">
+        <img src = "img/img/preloader.gif" class = "preloader_item" height=300px>
+    </div>
+
+    <!--HEADER-->
+    <header class = "header thetop" id = "header">
+        <div class = "banner">
+            <h1 class = "banner_title bell-fonts" style="color:rgba(240, 18, 18, 0.842)"></h1>
+        </div>
+
+        <!--video-->
+       <article class = "video-container">
+       <video class = "video_item" autoplay muted loop>
+           <source src = "video/video/Coffee at the Morning.mp4" type = "video/mp4">
+            <source src = "video/video/coffee.ogv" type = "video/ogv">
+                <source src = "video/video/coffee.webm" type = "video/webm">
+       </video>
+       </article>
+        
+       <!--NAV BTN-->
+       <div class = "navBtn">
+           <i class = "fas fa-bars"></i>
+       </div>
+        <nav class = "nav">
+        <ul class = "nav_links">
+            <li><a href = "#" class = "nav_single-link nav_logo">
+                <img src = "img/img/navLogo.svg">
+            </a></li>
+            <li><a href = "#header" class = "nav_single-link">HOME</a></li>
+            <li><a href = "#about" class = "nav_single-link">ABOUT US</a></li>
+            <li><a href = "#work" class = "nav_single-link">WORK</a></li>
+            <li><a href = "#drink" class = "nav_single-link">SIGN UP</a></li>
+            <li><a href = "#reviews" class = "nav_single-link">REVIEWS</a></li>
+            <li><a href = "#location" class = "nav_single-link">LOCATION</a></li>
+            <li><a href = "#contact" class = "nav_single-link">CONTACT</a></li>
+        </ul>
+        </nav>
+
+        <!--VIDEO SWITCH-->
+        <div class = "video_switch-container">
+            <div class = "video_switch">
+                <span>on</span>
+                <span>off</span>
+                <div class = "video_switch-btn"></div>
+            </div>
+        </div>
+    </header>
+    
+    <!--ABOUT
+     <section class = "about section-padding" id = "about">
+         <div class = "grid-container grid-container_medium-2">
+             ABOUt CONTINER
+             <article class = "about-container">
+                 FIRST CHILD
+                 <div class = "section-title">
+                     <h1 class = "section-title_name bell-fonts"><a href = "">OUR TEAM</a></h1>
+                     <div class = "section-title_underline"></div>
+                     <p class = "section-title_text">Lorem Ipsum is simply dummy text of the printing 
+                         and typesetting industry. Lorem Ipsum has been the industry's standard 
+                         dummy text ever since the 1500s, when an unknown printer took a galley of 
+                         type and scrambled it to make a type specimen book.</p>
+                 </div>
+                 SECOND CHILD
+                 <div class = "about_img">
+                     <img src = "img/img/aboutImg-1.jpeg" class = "about_img-item">
+                 </div>
+             </article>
+             <article class = "about-container">
+                    FIRST CHILD
+                    <div class = "section-title">
+                        <h1 class = "section-title_name bell-fonts">WHAT WE DO</h1>
+                        <div class = "section-title_underline"></div>
+                        <p class = "section-title_text">Lorem Ipsum is simply dummy text of the printing 
+                            and typesetting industry. Lorem Ipsum has been the industry's standard 
+                            dummy text ever since the 1500s, when an unknown printer took a galley of 
+                            type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    SECOND CHILD
+                    <div class = "about_img about_img-special">
+                        <img src = "img/img/aboutImg-2.jpeg" class = "about_img-item">
+                    </div>
+                </article>
+              </div>
+     </section> 
+    -->
+    <section class = "about">
+    <div class="section-title section-title-left" id = "about">
+        <h1 class="section-title_name bell-fonts">OUR TEAM</h1>
+        <div class="section-title_underline"></div>
+  
+      </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class = "imgBx">
+                    <img src = "https://images.pexels.com/photos/1138903/pexels-photo-1138903.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                  </div>
+                  <div class = "details">
+                    <h3>Subhash Kumar</h3>
+                    <span>General Manager</span>
+                  </div>
+                </div>
+          <div class="swiper-slide">
+              <div class = "imgBx">
+                  <img src = "https://images.pexels.com/photos/1301547/pexels-photo-1301547.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                </div>
+                <div class = "details">
+                  <h3>Laila</h3>
+                  <span>Bartender</span>
+                </div>
+          </div>
+                <div class="swiper-slide">
+                    <div class = "imgBx">
+                      <img src = "https://images.pexels.com/photos/462680/pexels-photo-462680.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    </div>
+                    <div class = "details">
+                      <h3> Ram Nath</h3>
+                      <span>Baker</span>
+                    </div>
+                  </div>
+          <div class="swiper-slide">
+              <div class = "imgBx">
+                  <img src = "https://images.pexels.com/photos/724212/pexels-photo-724212.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                </div>
+                <div class = "details">
+                  <h3>Sharry Sharma</h3>
+                  <span>Pantry Cook</span>
+                </div>
+          </div>
+          <div class="swiper-slide">
+              <div class = "imgBx">
+                  <img src = "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                </div>
+                <div class = "details">
+                  <h3>Ishaan Kohli</h3>
+                  <span>Human Resource Manager</span>
+                </div>
+          </div>
+          <div class="swiper-slide">
+              <div class = "imgBx">
+                  <img src = "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                </div>
+                <div class = "details">
+                  <h3>Rahul Jain</h3>
+                  <span>Wine Steward</span>
+                </div>
+          </div>
+          <div class="swiper-slide">
+              <div class = "imgBx">
+                  <img src = "https://images.pexels.com/photos/532220/pexels-photo-532220.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                </div>
+                <div class = "details">
+                  <h3>Vinay Chauhan</h3>
+                  <span>Expediter</span>
+                </div>
+          </div>
+          <div class="swiper-slide">
+              <div class = "imgBx">
+                  <img src = "https://images.pexels.com/photos/325682/pexels-photo-325682.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                </div>
+                <div class = "details">
+                  <h3>Rishi Dahiya</h3>
+                  <span>Wine Steward</span>
+                </div>
+          </div>
+          <div class="swiper-slide">
+              <div class = "imgBx">
+                  <img src = "https://images.pexels.com/photos/834863/pexels-photo-834863.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                </div>
+                <div class = "details">
+                  <h3>Manik Jain</h3>
+                  <span>Beverage Director</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class = "imgBx">
+                      <img src = "https://images.pexels.com/photos/705821/pexels-photo-705821.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    </div>
+                    <div class = "details">
+                      <h3>Naina</h3>
+                      <span>Public Relations Manager</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class = "imgBx">
+                          <img src = "https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                        </div>
+                        <div class = "details">
+                          <h3>Manik Jain</h3>
+                          <span>Pastry Chef</span>
+                        </div>
+                      </div>
+          </div>
+      </div>
+    </section>
+    <section class = 'work section-padding' id = "work">
+      <div class="section-title section-title-left">
+              <h1 class="section-title_name bell-fonts">WHAT WE OFFER</h1>
+              <div class="section-title_underline"></div>
+        
+            </div>
+            <!-- end of section title -->
+            <div class="work-container">
+              <!-- single work item -->
+              <article class="work-item item-1">
+                <img src="img/img/work-1.jpeg" alt="" class="work-item__img">
+                <a href="#" class="work-item__icon" data-id="1">
+                  <i class="fas fa-search"></i>
+                </a>
+              </article>
+              <!-- end single work item -->
+              <!-- single work item -->
+              <article class="work-item item-2">
+                <img src="img/img/work-2.jpeg" alt="" class="work-item__img">
+                <a href="#" class="work-item__icon" data-id="2">
+                  <i class="fas fa-search"></i>
+                </a>
+              </article>
+              <!-- end single work item -->
+              <!-- single work item -->
+              <article class="work-item item-3">
+                <img src="img/img/work-3.jpeg" alt="" class="work-item__img">
+                <a href="#" class="work-item__icon" data-id="3">
+                  <i class="fas fa-search"></i>
+                </a>
+              </article>
+              <!-- end single work item -->
+              <!-- single work item -->
+              <article class="work-item item-4">
+                <img src="img/img/work-4.jpeg" alt="" class="work-item__img">
+                <a href="#" class="work-item__icon" data-id="4">
+                  <i class="fas fa-search"></i>
+                </a>
+              </article>
+              <!-- end single work item -->
+              <!-- single work item -->
+              <article class="work-item item-5">
+                <img src="img/img/work-5.jpeg" alt="" class="work-item__img">
+                <a href="#" class="work-item__icon" data-id="5">
+                  <i class="fas fa-search"></i>
+                </a>
+              </article>
+              <!-- end single work item -->
+              <!-- single work item -->
+              <article class="work-item item-6">
+                <img src="img/img/work-6.jpeg" alt="" class="work-item__img">
+                <a href="#" class="work-item__icon" data-id="6">
+                  <i class="fas fa-search"></i>
+                </a>
+              </article>
+              <!-- end single work item -->
+              <!-- single work item -->
+              <article class="work-item item-7">
+                <img src="img/img/work-7.jpeg" alt="" class="work-item__img">
+                <a href="#" class="work-item__icon" data-id="7">
+                  <i class="fas fa-search"></i>
+                </a>
+              </article>
+              <!-- end single work item -->
+              <!-- single work item -->
+              <article class="work-item item-8">
+                <img src="img/img/work-8.jpeg" alt="" class="work-item__img">
+                <a href="#" class="work-item__icon" data-id="8">
+                  <i class="fas fa-search"></i>
+                </a>
+              </article>
+              <!-- end single work item -->
+              <!-- single work item -->
+              <article class="work-item item-9">
+                <img src="img/img/work-9.jpeg" alt="" class="work-item__img">
+                <a href="#" class="work-item__icon" data-id="9">
+                  <i class="fas fa-search"></i>
+                </a>
+              </article>
+              <!-- end single work item -->
+            </div>
+            <!-- Modal -->
+            <div class="work-modal">
+                  <div class="work-modal__item"></div>
+                  <div class="work-modal__close">
+                    <i class="fas fa-window-close"></i>
+                  </div>
+                </div>
+          </section>
+
+          <section class = "reviews" id = "reviews">
+              <div class="section-title section-title-left">
+                  <h1 class="section-title_name bell-fonts">OUR CUSTOMERS SPEAK</h1>
+                  <div class="section-title_underline"></div>
+               </div>
+               <div class = "container">
+          <div class="card-deck">
+            <div class="card mb-5">
+              <img class="card-img-top" src="https://images.pexels.com/photos/1844648/pexels-photo-1844648.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height = "300px" width = "300px" alt="Card image cap">
+              <div class="card-body">
+                <h2 class="card-title">AWESOME ENVIRONMENT</h2>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content</p>
+                <p style = "font-size:40px;color:yellow"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+              </div>
+            </div>
+            <div class="card mb-5">
+              <img class="card-img-top" src="https://images.pexels.com/photos/1162890/pexels-photo-1162890.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height = "300px" width = "300px" alt="Card image cap">
+              <div class="card-body">
+                <h2 class="card-title">TASTY AND HEALTHY</h2>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content</p>
+                  <p style = "font-size:40px;color:yellow"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></p>
+              </div>
+            </div>
+            <div class="card mb-5">
+              <img class="card-img-top" src="https://images.pexels.com/photos/1845562/pexels-photo-1845562.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height = "300px" width = "300px" alt="Card image cap">
+              <div class="card-body">
+                <h2 class="card-title">LOVELY RESTAURANT</h2>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content </p>
+                <p style = "font-size:40px;color:yellow"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+          </section>
+    <section class = "drink section-padding" id = "drink">
+        <div class = "grid-container">
+            <!--FIRST ITEM-->
+            <form class = "drink-form">
+            <p class = "drink-form_feedback">SOME TEXT</p>
+            <h3 class = "drink-form_title bell-fonts">TO BOOK YOUR TABLE</h3>
+            <div class = "drink-form_input">
+                <input type = "text" name = "" ide = "" maxlength = "15" class = "input-name" placeholder = "Name">
+            </div>
+            <div class = "drink-form_input">
+                <input type = "text" name = "" ide = "" maxlength = "15" class = "input-lastname" placeholder = "Last Name">
+            </div> 
+            <div class = "drink-form_input">
+                <input type = "email" name = "" ide = "" maxlength = "15" class = "input-email" placeholder = "Email">
+            </div>
+            <input type = "submit" value="Sign Up" class="input-submit">
+            </form>
+
+            <!--SECOND ITEM-->
+            <article class = "drink-card">
+                
+            
+                <div class = "drink-card_list">
+                
+                </div>
+
+            </article>
+
+        </div>
+    </section>
+                <!-- end of work -->
+                <!-- contact section -->
+  <section class="contact section-padding" id="location">
+        <!-- section title -->
+        <div class="section-title section-title-left">
+          <h1 class="section-title_name bell-fonts">Our Location</h1>
+          <div class="section-title_underline"></div>
+    
+        </div>
+        <!-- end of section title -->
+    
+    
+        <div class="contact-container">
+         <iframe class = "contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d291422.784180307!2d77.05613420387962!3d28.5432783392394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew+Delhi%2C+Delhi!5e0!3m2!1sen!2sin!4v1548609790922" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>  
+          <div class="contact-info">
+            <!-- single contact item -->
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <i class="fas fa-map-pin"></i>
+              </div>
+              <h2 class="contact-item__title">Address</h2>
+              <p class="contact-item__text">PKT B2/122 SECTOR - 24 ROHINI</p>
+            </div>
+            <!-- end of single contact item -->
+            <!-- single contact item -->
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <i class="fas fa-headphones-alt"></i>
+              </div>
+              <h2 class="contact-item__title">Support</h2>
+              <p class="contact-item__text">
+                <span>
+                  <i class="fas fa-phone"></i>
+                </span>
+                +91-1234-567-890
+              </p>
+              <p class="contact-item__text" style = "text-transform:lowercase">
+                <span>
+                  <i class="fas fa-envelope"></i>
+                </span>info@demo.com</p>
+            </div>
+            <!-- end of single contact item -->
+            <!-- single contact item -->
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h2 class="contact-item__title">Work Time</h2>
+              <p class="contact-item__text">Monday - Friday 8.00am - 8.00pm</p>
+            </div>
+            <!-- end of single contact item -->
+          </div>
+        </div>
+      </section>
+      <div class='scrolltop'>
+        <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+    </div>
+   <!-- <footer>
+      <div class = "footer-text">
+          <center><h3>Copyright &copy; 2018 All rights reserved</h3></center>
+      </div>
+  </footer>-->
+  <div class="footer-wrapper" id = "contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="footer-logo-content">
+        
+            <h1 class="glow text-center">IMPRESSO ESPRESSO</h>
+          </div>
+          <div class="footer-line"></div>
+          <div class="footer-line"></div>
+        </div>
+              
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="footer-menu-box">
+                  <h3>Main Menu</h3>
+                  <div class="footer-menu-list">
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Products</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Gallery</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+               <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="footer-menu-box">
+                  <h3>HOME DELIVERY</h3>
+                  <div class="footer-menu-list">
+                    <ul>
+                      <li><a href="#">Logo Designing</a></li>
+                      <li><a href="#">Brochure Designing</a></li>
+                      <li><a href="#">Graphics Portfolio</a></li>
+                      <li><a href="#">Static Website Design</a></li>
+                      <li><a href="#">Website Development</a></li>
+                      <li><a href="#">E-commerce Website</a></li>
+                      <li><a href="#">Website Maintenance</a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+               <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="footer-menu-box">
+                  <h3>Our Service</h3>
+                  <div class="footer-menu-list">
+                    <ul>
+                      <li><a href="#">Linux Hosting</a></li>
+                      <li><a href="#">Window Hosting</a></li>
+                      <li><a href="#">Domain Registration</a></li>
+                      <li><a href="#">SEO Promotion</a></li>
+                      <li><a href="#">Our Plans</a></li>
+                      <li><a href="#">Latest Offers</a></li>
+                      <li><a href="#">Sitemap</a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+               <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="footer-menu-box">
+                  <h3>Contact & Follow Us</h3>
+                  <div class="footer-social-icons">
+                    <ul>
+                      <li><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></i></a></li>
+                      <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                      <li><a href="#" target="_blank"><i class="fab fa-pinterest"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-menu-list">
+                    <ul>
+                      <li><a href="tel:+911234567890"><i class="fa fa-phone"></i>+91-1234-567-890</a></li>
+                      <li><a href="mailto:info@demo.com"><i class="fa fa-envelope"></i>info@demo.com</a></li>
+                      
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 colxs-12">
+          <p>Designed by: IMPRESSO ESPERESSO</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  </body>
+  </html>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 40,
+        stretch: 0,
+        depth: 100,
+        modifier: 3,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+    <script src = "js/main.js"></script>
+</body>
